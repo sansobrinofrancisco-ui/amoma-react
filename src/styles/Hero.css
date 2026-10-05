@@ -1,0 +1,58 @@
+/* capa oscura sobre la foto para que se lea el texto */
+.hero {
+  background-image:
+    linear-gradient(rgba(11, 10, 10, 0.45), rgba(12, 11, 11, 0.45)),
+    url("../assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--blanco);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 80px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* botón de pedido */
+.hero a {
+  background-color: var(--rosa);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.hero a:hover,
+.hero a:focus {
+  background-color: var(--rosa-oscuro);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}

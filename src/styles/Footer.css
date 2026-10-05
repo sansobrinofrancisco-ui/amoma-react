@@ -1,0 +1,25 @@
+footer {
+  background-color: var(--rosa);
+  color: var(--blanco);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: var(--rosa-claro);
+}
+
+/* foco en blanco, el rosa no se ve sobre el footer */
+footer a:focus {
+  outline-color: var(--blanco);
+}
